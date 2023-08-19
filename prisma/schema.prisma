@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Session {
+  id        String   @id
+  sid       String   @unique
+  data      String
+  expiresAt DateTime
+}
+
+model User {
+  id                    String                @id @default(cuid())
+  firstName             String
+  lastName              String
+  email                 String                @unique
+  password              String
+  Trasactions           Transaction[]
+  TrasactionsCategories TransactionCategory[]
+  Wallet                Wallet?
+}
+
+model Wallet {
+  id     String @id @default(cuid())
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Transaction {
+  id                    String              @id @default(cuid())
+  title                 String
+  money                 Float
+  date                  DateTime            @default(now())
+  info                  String?
+  transactionCategoryId String
+  userId                String
+  category              TransactionCategory @relation(fields: [transactionCategoryId], references: [id], onDelete: Cascade)
+  user                  User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model TransactionCategory {
+  id           String        @id @default(cuid())
+  name         String        @unique
+  userId       String
+  user         User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  Transactions Transaction[]
+}
