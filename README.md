@@ -1,15 +1,10 @@
-# BETTER ExpenseTrackerApp
-I refactored the old code.You can now delete your account in the /profile path \
-I added loading state to all the api requests.Now a spinner will appear if you request something \
-I added form validation in the /register page and in the /transaction pages \
-Lots More +++ 
+# BudgetInApp
+Software Engineering Class Project by Group 14:
+Adiva Veronia (2006468421)
+Firzy Allen (2006577555)
+Mochammad Shaffa Prawiranegara (2006528105)
 
-## Youtube Links
-Part 1 : https://youtu.be/XERS3j3hx_8 \
-Part 2 : https://youtu.be/tGv9q1YgWF0 \
-Part 3 : https://youtu.be/KWj5IW_tDa8 \
-Part 4 : https://youtu.be/pkXq9jvEZB4 \
-Part 5 (Final) : https://youtu.be/D3oKAmmtEZk 
+Summary: BudgetIn is a mobile application for managing money aimed at university students using the 50/30/20 rule. The aim of this project is to help users in managing their finance using the 50/30/20 budget rule, evaluate their finances every month, give tips and tricks to help manage their finances.
 
 ## STEPS
 -> Do npm i in the root directory and in the "/client" folder. The React App lives in the "/client" directory \
