@@ -1,7 +1,7 @@
 # BudgetInApp
-Software Engineering Class Project by Group 14:
-Adiva Veronia (2006468421)
-Firzy Allen (2006577555)
+Software Engineering Class Project by Group 14: \
+Adiva Veronia (2006468421) \
+Firzy Allen (2006577555) \
 Mochammad Shaffa Prawiranegara (2006528105)
 
 Summary: BudgetIn is a mobile application for managing money aimed at university students using the 50/30/20 rule. The aim of this project is to help users in managing their finance using the 50/30/20 budget rule, evaluate their finances every month, give tips and tricks to help manage their finances.
